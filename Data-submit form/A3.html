@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -66,11 +66,19 @@
             font-size: 17px;
             background-color: rgb(248, 250, 252);
             color: rgb(13, 2, 2);
+            cursor:pointer;
         }
         #Submit-again{
             position:fixed;
-            margin-top: -15px;
-            margin-left: 1000px;
+            top: 10px;
+            right: 50px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            justify-content: center;
+            align-items:center;
+            font-size: 30px;
+            border-color: black;
         }
         button:hover{
             background-color: rgb(133, 131, 136);
@@ -82,7 +90,7 @@
 </head>
 <body>
     <ul id="postlist">
-        <button type="button" id="Submit-again" onclick="postagain()" hidden>Submit data again</button>
+        <button id="Submit-again" onclick="postagain()" hidden>+</button>
     </ul>
     <div id="spinnerload" class="spinners"></div>
     <form id="Data-submit">
