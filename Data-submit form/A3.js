@@ -14,6 +14,7 @@ function fetchapi() {
         event.preventDefault();
         const dataTitle = document.getElementById('title').value;
         const dataBody = document.getElementById('body').value;
+        this.reset();
         if(!(dataTitle && dataBody)) {
             let span=document.getElementById('error');
             span.textContent='Empty Fields!'
